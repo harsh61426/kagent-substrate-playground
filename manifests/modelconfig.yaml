@@ -1,0 +1,11 @@
+# __MODEL__ and __NAME__ are substituted by setup.sh.
+apiVersion: api.kagent.dev/v1alpha3
+kind: ModelConfig
+metadata:
+  name: __NAME__
+  namespace: kagent
+spec:
+  model: __MODEL__
+  provider: Ollama
+  ollama:
+    host: http://ollama.ollama.svc.cluster.local

@@ -1,0 +1,5 @@
+install:
+  # Valid values come from `kagent config schema --component cli`.
+  defaultModelProvider: Ollama
+  kagent:
+    valuesFiles: [kagent-values.yaml]

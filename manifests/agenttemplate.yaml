@@ -1,0 +1,11 @@
+# __NAME__ is substituted by setup.sh (the Ollama ModelConfig name).
+apiVersion: api.kagent.dev/v1alpha3
+kind: AgentTemplate
+metadata:
+  name: my-first-template
+  namespace: kagent
+spec:
+  description: My first kagent agent
+  modelConfig:
+    name: __NAME__
+  systemPrompt: You are a concise, helpful assistant.
